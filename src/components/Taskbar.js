@@ -1,5 +1,5 @@
 import { List, TaskBar } from "@react95/core";
-import { Binoc, Doc, DocGris, Explore, FolderExe, FolderFile, Help, HelpBook, Mail2, Network, Network3, Phone2, Progman10, ReaderClosed, WindowsExplorer } from "@react95/icons";
+import { Explore, FolderExe, FolderFile, Help, HelpBook, Mail2, Network3 } from "@react95/icons";
 import { EventEmitter } from "./EventEmitter";
 // import { useContext } from "react";
 
@@ -9,8 +9,10 @@ export default function WebsiteTaskbar(props) {
         switch(x) {
           case 'terrabit':
             window.open('https://terrabit.idealabs.network');
+            break;
           default:
             EventEmitter.dispatch(x, true);
+            break;
         }
     }
 

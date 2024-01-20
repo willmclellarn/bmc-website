@@ -40,12 +40,15 @@ function DelayedTxs() {
             case 'setup':
                 setCopiedSetup(true);
                 setTimeout(() => setCopiedSetup(false), 1500);
+                break;
             case 'code':
                 setCopiedCode(true);
                 setTimeout(() => setCopiedCode(false), 1500);
+                break;
             case 'etf':
                 setCopiedEtf(true);
                 setTimeout(() => setCopiedEtf(false), 1500);
+                break;
             default:
             // do nothing
         }
@@ -69,7 +72,7 @@ function DelayedTxs() {
                     Secure delayed transactions on the ETF network work by using timelock encryption to encrypt call data and then scheduling
                     the future decryption and execution of these calls. They ensure that call data is hidden until executed. 
                     
-                    The <a target="_blank" href="https://github.com/ideal-lab5/etf.js">etf.js</a> library exposes an API to construct, sign, and submit 
+                    The <a target="_blank" rel="noreferrer"href="https://github.com/ideal-lab5/etf.js">etf.js</a> library exposes an API to construct, sign, and submit 
                      secure delayed transactions. 
                 </p>
                 <div>
@@ -108,12 +111,12 @@ function DelayedTxs() {
                     <ul>
                         <li>
                             <p>
-                                <a target='_blank' href="https://github.com/ideal-lab5/etf.js/tree/main/examples/react-delayed-txs">react-delayed-txs</a>
+                                <a target='_blank' rel="noreferrer" href="https://github.com/ideal-lab5/etf.js/tree/main/examples/react-delayed-txs">react-delayed-txs</a>
                                 A simple react example of submitting a delayed transaction from the browser.
                             </p>
                         </li>
                         <li>
-                            <a target='_blank' href='https://github.com/ideal-lab5/terrabit'>TerraBit</a> is a web3 game/demo that uses onchain randomness to let users own unique
+                            <a target='_blank' rel="noreferrer" href='https://github.com/ideal-lab5/terrabit'>TerraBit</a> is a web3 game/demo that uses onchain randomness to let users own unique
                              onchain 'seeds' which are used to build procedurally generated hex worlds. It also incorporates secure delayed transactions to enable a 'transmutation' protocol 
                              where participants can trustlessly and non-interactively swap their worlds.
                         </li>

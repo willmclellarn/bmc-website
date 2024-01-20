@@ -40,17 +40,21 @@ function Timelock() {
             case 'setup':
                 setCopiedSetup(true);
                 setTimeout(() => setCopiedSetup(false), 1500);
+                break;
             case 'etf':
                 setCopiedEtf(true);
                 setTimeout(() => setCopiedEtf(false), 1500);
+                break;
             case 'tlock':
                 setCopiedTlock(true);
                 setTimeout(() => setCopiedTlock(false), 1500);
+                break;
             case 'decrypt':
                 setCopiedDecrypt(true);
                 setTimeout(() => setCopiedDecrypt(false), 1500);
+                break;
             default:
-            // do nothing
+                break;
         }
     };
 
@@ -69,9 +73,9 @@ function Timelock() {
                 <h2>Timelock Encryption</h2>
                 <h3>Setup</h3>
                 <p>
-                    The <a target="_blank" href="https://github.com/ideal-lab5/etf.js">etf.js</a> library exposes
+                    The <a target="_blank" rel="noreferrer"href="https://github.com/ideal-lab5/etf.js">etf.js</a> library exposes
                     timelock encryption capabilities for javascript-based applications. It is a wrapper around a wasm
-                    build of the <a target="_blank" href="https://github.com/ideal-lab5/etf-sdk">etf-sdk</a> rust library, containing the core timelock encryption implementation.
+                    build of the <a target="_blank" rel="noreferrer"href="https://github.com/ideal-lab5/etf-sdk">etf-sdk</a> rust library, containing the core timelock encryption implementation.
                 </p>
                 <div>
                     <p>
@@ -124,12 +128,12 @@ function Timelock() {
                     <ul>
                         <li>
                             <p>
-                                <a target='_blank' href="https://github.com/ideal-lab5/etf.js/tree/main/examples/react-tlock">react-tlock</a>
+                                <a target='_blank' rel="noreferrer" href="https://github.com/ideal-lab5/etf.js/tree/main/examples/react-tlock">react-tlock</a>
                                 A simple example to demonstrate usage of timelock encryption and decryption in a react app.
                             </p>
                         </li>
                         <li>
-                            <a target='_blank' href='https://github.com/ideal-lab5/block-battalion'>block-battalion</a> is a web3 game/demo that useState
+                            <a target='_blank' rel="noreferrer" href='https://github.com/ideal-lab5/block-battalion'>block-battalion</a> is a web3 game/demo that useState
                             timelock encryption to create a global event clock for all players. Based on a pre-defined 'slot schedule', players participate in 
                             a game of bit roulette by submitting timelocked ciphertexts prior to a deadline and revealing/calculating results after.
                         </li>

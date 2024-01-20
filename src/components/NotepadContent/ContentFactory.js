@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react'
+import React from 'react'
 import About from './About'
 import Programs from './Programs'
 import Docs from './Documents'

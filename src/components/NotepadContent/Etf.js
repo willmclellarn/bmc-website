@@ -29,8 +29,8 @@ function EtfInfo() {
                         </li>
                     </ul>
 
-                    
-                    Read the <a target='_blank' href='https://etf.idealabs.network'>docs</a> to get started.
+
+                    Read the <a target='_blank' rel="noreferrer" href='https://etf.idealabs.network'>docs</a> to get started.
                 </p>
             </Frame>
         </div>

@@ -1,7 +1,6 @@
 import React from 'react'
-import { Modal, Frame } from '@react95/core'
+import { Modal } from '@react95/core'
 import ContentFactory from './NotepadContent/ContentFactory';
-import { Notepad1 } from '@react95/icons';
 
 function Notepad({ ico, closeNotepad, selectedItem, isMobile, left, top }) {
     return (

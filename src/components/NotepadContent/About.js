@@ -19,7 +19,7 @@ function About() {
                     We are building the ETF network, enabling <b>publicly verifiable onchain randomness</b>,
                     <b>timelock encryption</b>, and <b>secure delayed transactions</b>.
                     <br/><br/>
-                    Check out the <a target='_blank' href='https://etf.idealabs.network'>docs</a> to get started.
+                    Check out the <a target='_blank' rel="noreferrer" href='https://etf.idealabs.network'>docs</a> to get started.
                 </p>
 
                 <p>

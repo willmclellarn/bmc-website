@@ -1,21 +1,36 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import { EventEmitter } from './EventEmitter';
-import { FolderFile } from '@react95/icons';
 import Draggable from 'react-draggable';
 
 // TODO: this should be tied to the taskbar somehow
 function DesktopIcon({ ico, text, eventType }) {
 
-    const handleEventClick = (e) => {
-        if (e.detail === 2) {
-            switch(eventType) {
+    const [waitingClick, setWaitingClick] = useState(null);
+    const [lastClick, setLastClick] = useState(0);
+    
+    const processClick = (e) => {
+        if (lastClick && e.timeStamp - lastClick < 250 && waitingClick) {
+            // double click
+            setLastClick(0);
+            clearTimeout(waitingClick);
+            setWaitingClick(null);
+            switch (eventType) {
                 case 'terrabit':
                     window.open('https://terrabit.idealabs.network');
+                    break;
                 default:
                     EventEmitter.dispatch(eventType, true);
+                    break;
             }
         }
-    };
+        else {
+            // single click
+            setLastClick(e.timeStamp);
+            setWaitingClick(setTimeout(() => {
+                setWaitingClick(null);
+            }, 251))
+        }
+    }
 
     return (
         <div>
@@ -27,7 +42,7 @@ function DesktopIcon({ ico, text, eventType }) {
                 grid={[25, 25]}
                 scale={1}
             >
-                <div className="ico handle" onClick={handleEventClick}>
+                <div className="ico handle" onClick={processClick}>
                     {ico}
                     {text}
                 </div>

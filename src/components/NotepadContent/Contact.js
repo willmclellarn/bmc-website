@@ -1,5 +1,5 @@
 import { Frame } from '@react95/core'
-import { Chatshow3000, Mail3, Netwatch101, Network, Network2 } from '@react95/icons'
+import { Chatshow3000, Mail3, Network2 } from '@react95/icons'
 import React from 'react'
 
 function Contact() {
@@ -34,13 +34,13 @@ function Contact() {
 
                     </div>
                     <div className='contact'>
-                        <a target='_blank' href='https://discord.gg/4fMDbyRw7R'>
+                        <a target='_blank' rel="noreferrer" href='https://discord.gg/4fMDbyRw7R'>
                             <Chatshow3000 />
                             Discord
                         </a>
                     </div>
                     <div className='contact'>
-                        <a target='_blank' href='https://twitter.com/Ideallabs0'>
+                        <a target='_blank' rel="noreferrer" href='https://twitter.com/Ideallabs0'>
                             <Network2 />
                             Twitter
                         </a>

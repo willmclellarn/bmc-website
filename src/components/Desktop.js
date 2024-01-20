@@ -1,22 +1,16 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 // import Explorer from './Explorer'
 import Notepad from './Notepad';
 // import DataContext from '../contexts/dataContext'
 import '../App.css';
 import { EventEmitter } from './EventEmitter';
-import { Frame, Modal } from '@react95/core';
-import { Data16, Explorer100, FlyingThroughSpace100, FolderExe2, FolderFile, Mail3, Network2, QuestionBubble, Time, Timedate200, Url105, Wmsui321000 } from '@react95/icons';
+import { Modal } from '@react95/core';
+import { Explorer100, FlyingThroughSpace100, FolderExe2, FolderFile, Mail3, Network2, QuestionBubble, Time, Timedate200, Url105 } from '@react95/icons';
 import DesktopIcon from './DesktopIcon';
 
 function WebsiteDesktop(props) {
 
-    const [aboutStatus, setAboutStatus] = useState(true);
     const isMobile = window.innerWidth < 850;
-    const [explorerOpened, toggleExplorer] = useState(false);
-    const [selectedItem, setSelectedItem] = useState({ id: 'about', name: 'About' });
-    const [notepadOpened, toggleNotepad] = useState(true);
-    const [items, setItems] = useState([]);
-
     const [openEditors, setOpenEditors] = useState([]);
 
 
@@ -77,11 +71,11 @@ function WebsiteDesktop(props) {
                 <span className='title'>Ideal Labs</span>
                 
                 <div className='links'>
-                    <a target='_blank' href='https://github.com/ideal-lab5'>Github</a>
+                    <a target='_blank' rel="noreferrer" href='https://github.com/ideal-lab5'>Github</a>
                     |
-                    <a target='_blank' href='https://discord.gg/4fMDbyRw7R'>Discord</a>
+                    <a target='_blank' rel="noreferrer" href='https://discord.gg/4fMDbyRw7R'>Discord</a>
                     |
-                    <a target='_blank' href='https://ideallabs.substack.com'>Substack</a>
+                    <a target='_blank' rel="noreferrer" href='https://ideallabs.substack.com'>Substack</a>
                 </div>
             </div>
         </Modal>

@@ -38,12 +38,15 @@ function Randomness() {
             case 'toml':
                 setCopiedToml(true);
                 setTimeout(() => setCopiedToml(false), 1500);
+                break;
             case 'env':
                 setCopiedEnv(true);
                 setTimeout(() => setCopiedEnv(false), 1500);
+                break;
             case 'ext':
                 setCopiedExt(true);
                 setTimeout(() => setCopiedExt(false), 1500);
+                break;
             default:
                 // do nothing
         }
@@ -65,7 +68,7 @@ function Randomness() {
             >
                 <h2>Publicly Verifiable Onchain Randomness</h2>
                 <p>
-                    The <a target="_blank" href="https://github.com/ideal-lab5/contracts">ETF contracts tools</a> provide ink! smart contracts with the ability to fetch
+                    The <a target="_blank" rel="noreferrer"href="https://github.com/ideal-lab5/contracts">ETF contracts tools</a> provide ink! smart contracts with the ability to fetch
                     randomness from the chain via a chain extension. We are working on
                     potential EVM support in the future.
 
