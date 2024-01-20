@@ -3,11 +3,17 @@ import { EventEmitter } from './EventEmitter';
 import { FolderFile } from '@react95/icons';
 import Draggable from 'react-draggable';
 
+// TODO: this should be tied to the taskbar somehow
 function DesktopIcon({ ico, text, eventType }) {
 
     const handleEventClick = (e) => {
         if (e.detail === 2) {
-            EventEmitter.dispatch(eventType, true);
+            switch(eventType) {
+                case 'terrabit':
+                    window.open('https://terrabit.idealabs.network');
+                default:
+                    EventEmitter.dispatch(eventType, true);
+            }
         }
     };
 

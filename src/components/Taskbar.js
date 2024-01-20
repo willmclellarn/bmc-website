@@ -1,21 +1,59 @@
 import { List, TaskBar } from "@react95/core";
-import { Doc, DocGris, FolderExe, FolderFile, Help, Mail2, Phone2, Progman10, ReaderClosed, WindowsExplorer } from "@react95/icons";
+import { Binoc, Doc, DocGris, Explore, FolderExe, FolderFile, Help, HelpBook, Mail2, Network, Network3, Phone2, Progman10, ReaderClosed, WindowsExplorer } from "@react95/icons";
 import { EventEmitter } from "./EventEmitter";
 // import { useContext } from "react";
 
 export default function WebsiteTaskbar(props) {
 
     const handleClick = (x) => {
-        EventEmitter.dispatch(x, true);
+        switch(x) {
+          case 'terrabit':
+            window.open('https://terrabit.idealabs.network');
+          default:
+            EventEmitter.dispatch(x, true);
+        }
     }
 
     return (
         <TaskBar list={<List>
-            <List.Item icon={<FolderExe/>} onClick={() => handleClick('programs')}>
+            <List.Item icon={<FolderExe/>}>
               <span>Programs</span>
+              <List>
+                <List.Item icon={<Network3 />} onClick={() => handleClick('etf')}>
+                  <span>ETF Network</span>
+                </List.Item>
+                <List.Item icon={<Explore />} onClick={() => handleClick('terrabit')}>
+                  TerraBit
+                </List.Item>
+              </List>
             </List.Item>
             <List.Item icon={<FolderFile/>} onClick={() => handleClick('docs')}>
               <span>Documents</span>
+              <List>
+                <List.Item>
+                  ETF Network Tech Docs
+                </List.Item>
+                <List.Item>
+                  Whitepaper
+                </List.Item>
+                <List.Item>
+                  Roadmap
+                </List.Item>
+              </List>
+            </List.Item>
+            <List.Item icon={<HelpBook />}>
+              Help
+              <List>
+                <List.Item onClick={() => handleClick('randomness')}>
+                  Randomness
+                </List.Item>
+                <List.Item onClick={() => handleClick('timelock')}>
+                  Timelock Encryption
+                </List.Item>
+                <List.Item onClick={() => handleClick('dtxs')}>
+                  Delayed Transactions
+                </List.Item>
+              </List>
             </List.Item>
             <List.Divider />
             <List.Item icon={<Help/>} onClick={() => handleClick('about')}>

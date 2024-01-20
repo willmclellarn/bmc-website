@@ -3,7 +3,7 @@ import { Modal, Frame } from '@react95/core'
 import ContentFactory from './NotepadContent/ContentFactory';
 import { Notepad1 } from '@react95/icons';
 
-function Notepad({ ico, closeNotepad, selectedItem, isMobile }) {
+function Notepad({ ico, closeNotepad, selectedItem, isMobile, left, top }) {
     return (
         <Modal
             icon={ ico }
@@ -11,8 +11,8 @@ function Notepad({ ico, closeNotepad, selectedItem, isMobile }) {
             closeModal={closeNotepad}
             buttons={[{ value: "Close", onClick: closeNotepad }]}
             style={{
-                left: isMobile ? '5%' : '50%',
-                top: isMobile ? '3%' : '15%',
+                left: isMobile ? '5%' : left,
+                top: isMobile ? '3%' : top,
                 width: isMobile ? '90%' : 450,
             }}
             menu={[

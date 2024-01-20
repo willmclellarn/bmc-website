@@ -4,6 +4,9 @@ function Docs() {
     return (
         <div>
             <h2>Docs</h2>
+            <p>
+                Coming soon!
+            </p>
         </div>
     )
 }
