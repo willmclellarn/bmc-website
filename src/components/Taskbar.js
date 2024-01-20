@@ -19,7 +19,7 @@ export default function WebsiteTaskbar(props) {
     return (
         <TaskBar list={<List>
             <List.Item icon={<FolderExe/>}>
-              <span>Programs</span>
+              <span onClick={() => handleClick('programs')}>Programs</span>
               <List>
                 <List.Item icon={<Network3 />} onClick={() => handleClick('etf')}>
                   <span>ETF Network</span>

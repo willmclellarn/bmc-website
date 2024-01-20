@@ -5,7 +5,7 @@ import Notepad from './Notepad';
 import '../App.css';
 import { EventEmitter } from './EventEmitter';
 import { Modal } from '@react95/core';
-import { Explorer100, FlyingThroughSpace100, FolderExe2, FolderFile, Mail3, Network2, QuestionBubble, Time, Timedate200, Url105 } from '@react95/icons';
+import { Explorer100, FlyingThroughSpace100, FolderExe2, FolderFile, InfoBubble, Mail3, Network2, QuestionBubble, Time, Timedate200, Url105 } from '@react95/icons';
 import DesktopIcon from './DesktopIcon';
 
 function WebsiteDesktop(props) {
@@ -13,6 +13,7 @@ function WebsiteDesktop(props) {
     const isMobile = window.innerWidth < 850;
     const [openEditors, setOpenEditors] = useState([]);
 
+    const [closeInfo, setCloseInfo] = useState(true);
 
     const editors = [
         { id: 'about', name: 'About', ico: <QuestionBubble />},
@@ -33,14 +34,15 @@ function WebsiteDesktop(props) {
                 openNotepad(editor)
             });
         });
+        // eslint-disable-next-line
     }, []);
 
     const getNextX = (n) => {
-        return `${15 + 5 * n}%`
+        return `${35 + 5 * n}%`
     }
 
     const getNextY = (n) => {
-        return `${20 + 5 * n}%`
+        return `${15 + 5 * n}%`
     }
 
     const closeNotepad = (id) => {
@@ -79,6 +81,21 @@ function WebsiteDesktop(props) {
                 </div>
             </div>
         </Modal>
+        { closeInfo && (
+            <Modal
+                icon={<InfoBubble />}
+                title={`info`}
+                closeModal={() => setCloseInfo(false)}
+                style={{
+                    left: isMobile ? '50%' : '10%',
+                    top: isMobile ? '30%' : '25%',
+                    width: isMobile ? '90%' : 450,
+                }}>
+                <div className='centered'>
+                <span>This website is best viewed on a laptop or PC.</span>
+                </div>
+            </Modal>
+        )}
         {openEditors.map((editor, idx) => (
             <Notepad
                 key={editor.id}
