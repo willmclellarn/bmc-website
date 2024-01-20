@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import { Desktop, MsDos } from '@react95/icons';
+import WebsiteTaskbar from './components/Taskbar';
+import WebsiteDesktop from './components/Desktop';
+// import DataContext from './contexts/dataContext';
+// import DataService from './services/dataService';
+import { GlobalStyle } from '@react95/core';
+import { EventEmitter } from 'events';
+// import { AppProvider } from './context/appContext';
+
+// const dataService = new DataService();
+const emitter = new EventEmitter();
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='App-body'>
+        <GlobalStyle />
+        <WebsiteDesktop />
+        <WebsiteTaskbar />
+      </div>
     </div>
   );
 }
