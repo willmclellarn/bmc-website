@@ -30,9 +30,9 @@ function Contact() {
         <h2>Contact</h2>
         <div className="contact-container">
           <div className="contact">
-            <Mailto email="hello@idealabs.network" subject="Hello">
+            <Mailto email="w+bullmktg@general.dev" subject="Hello">
               <Mail3 />
-              <span>hello@idealabs.network</span>
+              <span>w+bullmktg@general.dev</span>
             </Mailto>
           </div>
           <div className="contact">
@@ -49,7 +49,7 @@ function Contact() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://twitter.com/Ideallabs0"
+              href="https://twitter.com/bullmktgco"
             >
               <Network2 />
               Twitter

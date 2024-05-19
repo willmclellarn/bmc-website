@@ -73,7 +73,7 @@ function WebsiteDesktop(props) {
     <>
       <Modal
         icon={<FlyingThroughSpace100 />}
-        title={`idealabs.network`}
+        title={`bull marketing co`}
         style={{
           left: isMobile ? "5%" : "10%",
           top: isMobile ? "3%" : "5%",
