@@ -8,7 +8,7 @@ Welcome to The Bull Marketing Company's official website repository! If you're h
 
 - [React95](https://github.com/React95/React95) - Because why not bring back some 90s nostalgia while we pump your brand to the moon?
 
-<img src="./public/screenshot.png" alt="Screenshot of The Bull Marketing Company website">
+<img src="./public/bull-bg.jpeg" alt="Screenshot of The Bull Marketing Company website">
 
 ## Why Choose Us?
 
