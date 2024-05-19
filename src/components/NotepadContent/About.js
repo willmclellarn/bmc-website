@@ -1,51 +1,84 @@
-import { Frame } from '@react95/core'
-import React from 'react'
+import { Frame } from "@react95/core";
+import React from "react";
 
 function About() {
-    return (
-        <div>
-            <Frame
-                bg="white"
-                boxShadow="in"
-                height="100%"
-                padding={20}
-                style={{
-                    overflowY: "auto",
-                    maxHeight: "60vh",
-                }}
-            >
-                <h2>Ideal Labs</h2>
-                <p>
-                    We are building the ETF network, enabling <b>publicly verifiable onchain randomness</b>,
-                    <b>timelock encryption</b>, and <b>secure delayed transactions</b>.
-                    <br/><br/>
-                    Check out the <a target='_blank' rel="noreferrer" href='https://etf.idealabs.network'>docs</a> to get started.
-                </p>
+  return (
+    <div>
+      <Frame
+        bg="white"
+        boxShadow="in"
+        height="100%"
+        padding={20}
+        style={{
+          overflowY: "auto",
+          maxHeight: "60vh",
+        }}
+      >
+        <h2>The Bull Marketing Company</h2>
+        <p>
+          Welcome to <b>The Bull Marketing Company</b>, where we take your
+          crypto marketing to the next level. If you're not with us, you're
+          clearly missing out. Why? Because we are the <b>meme maxis</b> of the
+          industry, powered by cutting-edge <b>AI-Powered</b> strategies. Do you
+          want to know the key to increasing profits? Just cut costs by 50%!
+          Simple, right?
+          <br />
+          <br />
+          Check out our{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://thebullmarketing.com"
+          >
+            portfolio
+          </a>{" "}
+          to see our bulls in action.
+        </p>
 
-                <p>
-                    Blockchains empower the development of decentralized applications,
-                    liberating them from the constraints of centralized authorities.
-                    Despite this liberation, web3 systems often lack certain capabilities
-                    that are inherently present in web2 systems. Unlike web2 systems,
-                    which effortlessly generate random numbers and facilitate non-interactive
-                    asynchronous multiparty interactions, web3 systems encounter challenges
-                    due to their trustless nature. This project aims to provide publicly
-                    verifiable onchain randomness, timelock encryption, and secure delayed
-                    transaction (front-running resistant) capabilities for web3 systems.
-                    With these, it becomes possible to use random values within smart contracts as
-                    well as enable on-chain, non-interactive, async protocols.
-                    <br/><br/>
-                    This project aims to enable onchain protocols that are...
+        <h3>Go Full Bull</h3>
+        <p>
+          Here at The Bull Marketing Company, we believe in going full bull or
+          nothing at all. Our team of degenerate chads lives and breathes Wall
+          Street, crypto, and memes. We know what it takes to pump your brand
+          and make it <b>alpha</b>.
+          <ul>
+            <li>
+              <b>Meme maxis</b>: Our campaigns are not just ads; they are meme
+              masterpieces that go viral.
+            </li>
+            <li>
+              <b>AI-Powered</b>: We use advanced AI to analyze trends and
+              optimize your reach.
+            </li>
+            <li>
+              <b>Be alpha, get alpha</b>: We don't just follow trends; we set
+              them. Choose rich, choose us.
+            </li>
+          </ul>
+        </p>
 
-                    <ul>
-                        <li><b>Non-interactive</b>: Participants can engage without requiring interaction or knowledge of each other.</li>
-                        <li><b>Eventually-consistent</b>: The protocol ensures completion by a predetermined deadline for all honest players.</li>
-                        <li><b>Front-running resistant</b>: Participants can maintain the confidentiality of their inputs until a specified future deadline, at which point they are collectively revealed.</li>
-                    </ul>
-                </p>
-            </Frame>
-        </div>
-    )
+        <h3>Bulls Only</h3>
+        <p>
+          If you're here talking bear, you're in the wrong place.{" "}
+          <b>That's bear talk</b>, and we're all about the bulls.
+          <ul>
+            <li>
+              <b>Pre-rich</b>: Our clients are always on the verge of greatness.
+              Don't be left behind.
+            </li>
+            <li>
+              <b>Choose rich</b>: It's a simple choice. Go with the best or get
+              left in the dust.
+            </li>
+            <li>
+              <b>Bulls only</b>: Our community is exclusive, and only the
+              boldest brands make the cut.
+            </li>
+          </ul>
+        </p>
+      </Frame>
+    </div>
+  );
 }
 
-export default About
+export default About;
