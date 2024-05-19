@@ -17,8 +17,12 @@ import {
   Time,
   Timedate200,
   Url105,
+  Access223,
+  Inetcpl1313,
 } from "@react95/icons";
+
 import DesktopIcon from "./DesktopIcon";
+import MassiveDesktopIcon from "./MassiveDesktopIcon";
 
 function WebsiteDesktop(props) {
   const isMobile = window.innerWidth < 850;
@@ -35,6 +39,7 @@ function WebsiteDesktop(props) {
     { id: "randomness", name: "Randomness", ico: <Url105 /> },
     { id: "timelock", name: "Timelock Encryption", ico: <Time /> },
     { id: "dtxs", name: "Delayed Transactions", ico: <Timedate200 /> },
+    { id: "access", name: "Access Control", ico: <Access223 /> },
   ];
 
   useEffect(() => {
@@ -124,6 +129,13 @@ function WebsiteDesktop(props) {
           <div className="centered">
             <span>Click Start To Start Bull Marketing</span>
           </div>
+          <a href="https://shop.bullmarketingco.com">
+            <MassiveDesktopIcon
+              ico={<Inetcpl1313 />}
+              text="Shop BMC Merch"
+              eventType={"access"}
+            />
+          </a>
         </Modal>
       )}
       {openEditors.map((editor, idx) => (
@@ -142,11 +154,6 @@ function WebsiteDesktop(props) {
           ico={<FolderFile variant="32x32_4" />}
           text="Documents"
           eventType={"docs"}
-        />
-        <DesktopIcon
-          ico={<FolderExe2 />}
-          text="Programs"
-          eventType={"programs"}
         />
         <DesktopIcon
           ico={<Explorer100 />}
