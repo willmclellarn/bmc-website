@@ -73,7 +73,7 @@ function WebsiteDesktop(props) {
         icon={<FlyingThroughSpace100 />}
         title={`bull marketing co`}
         style={{
-          left: isMobile ? "5%" : "10%",
+          left: isMobile ? "2%" : "5%",
           top: isMobile ? "3%" : "5%",
           width: isMobile ? "90%" : 650,
         }}
@@ -114,7 +114,7 @@ function WebsiteDesktop(props) {
           title={`info`}
           closeModal={() => setCloseInfo(false)}
           style={{
-            left: isMobile ? "50%" : "10%",
+            left: isMobile ? "45%" : "5%",
             top: isMobile ? "30%" : "25%",
             width: isMobile ? "90%" : 450,
           }}
