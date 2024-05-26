@@ -32,14 +32,7 @@ function WebsiteDesktop(props) {
 
   const editors = [
     { id: "about", name: "About", ico: <QuestionBubble /> },
-    { id: "programs", name: "Programs", ico: <FolderExe2 /> },
-    { id: "docs", name: "Documents", ico: <FolderFile /> },
     { id: "contact", name: "Contact", ico: <Mail3 /> },
-    { id: "etf", name: "ETF Network", ico: <Network2 /> },
-    { id: "randomness", name: "Randomness", ico: <Url105 /> },
-    { id: "timelock", name: "Timelock Encryption", ico: <Time /> },
-    { id: "dtxs", name: "Delayed Transactions", ico: <Timedate200 /> },
-    { id: "access", name: "Access Control", ico: <Access223 /> },
   ];
 
   useEffect(() => {
@@ -150,7 +143,7 @@ function WebsiteDesktop(props) {
         />
       ))}
       <div className="init-icos">
-        <DesktopIcon
+        {/* <DesktopIcon
           ico={<FolderFile variant="32x32_4" />}
           text="Documents"
           eventType={"docs"}
@@ -159,7 +152,7 @@ function WebsiteDesktop(props) {
           ico={<Explorer100 />}
           text="TerraBit.exe"
           eventType={"terrabit"}
-        />
+        /> */}
       </div>
     </>
   );

@@ -27,7 +27,7 @@ export default function WebsiteTaskbar(props) {
     <TaskBar
       list={
         <List>
-          <List.Item icon={<FolderExe />}>
+          {/* <List.Item icon={<FolderExe />}>
             <span onClick={() => handleClick("programs")}>Programs</span>
             <List>
               <List.Item icon={<Network3 />} onClick={() => handleClick("etf")}>
@@ -40,16 +40,8 @@ export default function WebsiteTaskbar(props) {
                 TerraBit
               </List.Item>
             </List>
-          </List.Item>
-          <List.Item icon={<FolderFile />} onClick={() => handleClick("docs")}>
-            <span>Documents</span>
-            <List>
-              <List.Item>ETF Network Tech Docs</List.Item>
-              <List.Item>Whitepaper</List.Item>
-              <List.Item>Roadmap</List.Item>
-            </List>
-          </List.Item>
-          <List.Item icon={<HelpBook />}>
+          </List.Item> */}
+          {/* <List.Item icon={<HelpBook />}>
             Help
             <List>
               <List.Item onClick={() => handleClick("randomness")}>
@@ -62,7 +54,7 @@ export default function WebsiteTaskbar(props) {
                 Delayed Transactions
               </List.Item>
             </List>
-          </List.Item>
+          </List.Item> */}
           <List.Divider />
           <List.Item icon={<Help />} onClick={() => handleClick("about")}>
             <span>About</span>

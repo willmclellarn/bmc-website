@@ -35,7 +35,7 @@ function Contact() {
               <span>w+bullmktg@general.dev</span>
             </Mailto>
           </div>
-          <div className="contact">
+          {/* <div className="contact">
             <a
               target="_blank"
               rel="noreferrer"
@@ -44,7 +44,7 @@ function Contact() {
               <Chatshow3000 />
               Discord
             </a>
-          </div>
+          </div> */}
           <div className="contact">
             <a
               target="_blank"
